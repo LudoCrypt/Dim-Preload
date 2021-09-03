@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "dimpreload",
+	"version": "${version}",
+	"name": "Dimension Preload",
+	"description": "Sends you to the World Loading screen when you change dimensions",
+	"authors": [
+		"LudoCrypt"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/dimpreload",
+		"sources": "https://github.com/LudoCrypt/Dim-Preload",
+		"issues": "https://github.com/LudoCrypt/Dim-Preload/issues"
+	},
+	"license": "LGPLv3",
+	"icon": "assets/dimpreload/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ludocrypt.dimpreload.DimPreload"
+		],
+		"client": [
+			"net.ludocrypt.dimpreload.DimPreloadClient"
+		]
+	},
+	"mixins": [
+		"dimpreload.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.11.3",
+		"fabric": "*",
+		"minecraft": "1.17.x",
+		"java": ">=16"
+	}
+}
